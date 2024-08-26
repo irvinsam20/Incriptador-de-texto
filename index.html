@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>a</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <textarea id="inputText" placeholder="Ingrese el texto aqui" aria-label="Ingrese el texto para encriptar o desencriptar"></textarea>
+                <p class="info"><span class="info-icon">ⓘ</span> Solo letras minúsculas y sin acentos</p>
+                <div class="button-container">
+                    <button id="encryptBtn" class="btn btn-primary">Encriptar</button>
+                    <button id="decryptBtn" class="btn btn-secondary">Desencriptar</button>
+                </div>
+            </section>
+            <section class="output-section">
+                <div id="outputContent">
+                    <div id="placeholderContent">
+                        <div class="illustration">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="#f3f5fc" />
+                                <path d="M100,30 Q130,50 120,90 T100,150" fill="none" stroke="#adb5bd" stroke-width="2" />
+                                <circle cx="100" cy="40" r="10" fill="#adb5bd" />
+                            </svg>
+                            <svg class="diamond" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path d="M12 2l8 8-8 8-8-8 8-8z" fill="#adb5bd" />
+                            </svg>
+                        </div>
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div id="resultContent" style="display: none;">
+                        <p id="outputText"></p>
+                        <button id="copyBtn" class="btn btn-copy">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
